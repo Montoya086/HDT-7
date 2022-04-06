@@ -6,13 +6,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/**
- * 
- */
 
 /**
- * @author Andres
- *
+ * Clase Main
+ * @author Andrés Montoya
+ * @version 1.0    2/04/2022
  */
 public class Main {
 
@@ -47,17 +45,17 @@ public class Main {
 			System.out.println("6. Salir");
 			opt = Integer.parseInt(scanner.nextLine());
 			switch (opt) {
-			case 1: 
+			case 1: //mostrar diccionario ingles-español
 				System.out.println("\n---**---");
 				System.out.println(dictionary.showIngToSpan());
 				System.out.println("---**---\n");
 				break;
-			case 2: 
+			case 2: //mostrar diccionario frances-español
 				System.out.println("\n---**---");
 				System.out.println(dictionary.showFrnToSpan());
 				System.out.println("---**---\n");
 				break;
-			case 3: 
+			case 3: //agregar palabra al diccionario
 				System.out.println("\n---**---");
 				System.out.println("Ingrese la palaba en el formato Ingles,Español,Frances");
 				String wordString = scanner.nextLine();
@@ -72,7 +70,7 @@ public class Main {
 				}
 				System.out.println("---**---\n");
 				break;
-			case 4: 
+			case 4: //eliminar palabra del diccionario
 				System.out.println("\n---**---");
 				System.out.println("Ingrese la palaba que desea borrar");
 				String word_delete = scanner.nextLine().toLowerCase();
@@ -91,7 +89,7 @@ public class Main {
 				}
 				System.out.println("---**---\n");
 				break;
-			case 5: 
+			case 5: //leer y traducir archivo 
 				try {
 					FileReader r = new FileReader("texto.txt");
 					BufferedReader br = new BufferedReader(r);
@@ -118,7 +116,7 @@ public class Main {
 					System.out.println("Ha ocurrido una excepcion de tipo IO: "+e);
 				}
 				break;
-			case 6: 
+			case 6: //salir
 				salir = true;
 				break;
 			default:
@@ -126,6 +124,10 @@ public class Main {
 			}
 		}
 	}
+	/**
+	 * Metodo que permite sobreescribir un archivo
+	 * @param words lineas del archivo
+	 */
 	private static void saveFile(ArrayList<String> words) {
 		try {
 			//Sobreescribe el archivo

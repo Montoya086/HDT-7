@@ -3,8 +3,10 @@
  */
 import java.util.Comparator;
 /**
- * @author Andres
- *
+ * Clase String comparator
+ * @author Andrés Montoya
+ * @version 1.0    2/04/2022
+ * Clase encargada de comparar strings
  */
 public class StringComparator implements Comparator<String>{
 

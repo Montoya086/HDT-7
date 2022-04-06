@@ -4,8 +4,10 @@
 import java.util.ArrayList;
 import java.util.Comparator;
 /**
- * @author Andres
- *
+ * Clase Binary Search Tree
+ * @author Andrés Montoya
+ * @version 1.0    2/04/2022
+ * Recuerado de: https://github.com/malonso-uvg/ADT_Ejemplos 
  */
 public class BinarySearchTree<K, V> implements IBinarySearchTree<K, V> {
 	

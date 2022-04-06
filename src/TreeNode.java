@@ -3,8 +3,10 @@
  */
 
 /**
- * @author Andres
- *
+ * Clase tree node
+ * @author Andrés Montoya
+ * @version 1.0    2/04/2022
+ * Recuerado de: https://github.com/malonso-uvg/ADT_Ejemplos 
  */
 public class TreeNode<K, V> {
 
